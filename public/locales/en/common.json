@@ -1,0 +1,19 @@
+{
+    "contact_title": "Contact Us",
+    "contact_description": "If you need any support or information on any subject, please get in touch with us by following our contact details. Our expert team is ready to respond to your needs as soon as possible.",
+    "contact_address": "Adres",
+    "contact_telephone": "Telephone",
+    "contact_email": "E-Mail",
+    "new_label": "New",
+    "all_categories" : "All",
+    "categories" : "Categories",
+    "all_filter" : "Show All",
+    "read_more": "Read More",
+    "writer": "Writer",
+    "publisher" : "Publisher",
+    "product_code" : "Product Code",
+    "product_category":  "Product Categories",
+    "product_category_desc":  "Discover all our products.",
+    "blog_category": "Blog Categories",
+    "blog_category_desc": "All blog content"
+}

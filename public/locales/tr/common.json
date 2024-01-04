@@ -1,0 +1,19 @@
+{
+    "contact_title": "İletişim",
+    "contact_description": "Eğer herhangi bir konuda destek veya bilgi talebiniz varsa, lütfen bizimle iletişime geçin. Uzman ekibimiz, ihtiyaçlarınıza yardımcı olmaktan memnuniyet duyacaktır.",
+    "contact_address": "Address",
+    "contact_telephone": "Telefon",
+    "contact_email": "E-Posta",
+    "new_label": "Yeni",
+    "all_categories" : "Hepsi",
+    "categories" : "Katagoriler",
+    "all_filter" : "Hepsini Göster",
+    "read_more": "Devamını Oku",
+    "writer": "Yazar",
+    "publisher" : "Yayınevi",
+    "product_code" : "Ürün Kodu",
+    "product_category":  "Ürün Kategorileri",
+    "product_category_desc":  "Tüm ürünlerimizi keşfedin.",
+    "blog_category": "Blog Kategorileri",
+    "blog_category_desc": "Tüm blog içerikleri"
+}
