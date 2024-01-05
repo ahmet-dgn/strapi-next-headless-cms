@@ -178,7 +178,7 @@ export default function Slider({ data, backendUrl }) {
             <Image
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8UA8AAiUBUcc3qzwAAAAASUVORK5CYII="
-              src={`${backendUrl}${slide.Image.data.attributes.url}`}
+              src={slide.Image.data.attributes.url}
               alt={slide.Title || "slider"}
               fill
               sizes="100vw"

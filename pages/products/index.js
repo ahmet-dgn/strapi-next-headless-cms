@@ -139,8 +139,7 @@ export default function Products({ menu, products, generalSettings }) {
                       cardTitle={product.attributes.Title}
                       cardImg={
                         product.attributes.MainImage.data
-                          ? dataUrl +
-                            product.attributes.MainImage.data.attributes.url
+                          ? product.attributes.MainImage.data.attributes.url
                           : ""
                       }
                       cardPadding="p-2 xl:p-4"

@@ -14,10 +14,9 @@ export default function ProductDetail({ product, menu, generalSettings }) {
 
   const imagesArray = data.attributes.MainImage.data
     ? [
-        dataUrl + data.attributes.MainImage.data.attributes.url,
-        ...(data.attributes.Image.data?.map(
-          (image) => dataUrl + image.attributes.url
-        ) || []),
+        data.attributes.MainImage.data.attributes.url,
+        ...(data.attributes.Image.data?.map((image) => image.attributes.url) ||
+          []),
       ].filter((url) => url !== undefined && url !== null && url !== "")
     : [];
 

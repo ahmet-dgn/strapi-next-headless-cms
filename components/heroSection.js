@@ -13,7 +13,7 @@ export default function HeroSection({ data, backendUrl }) {
           <div className="lg:pr-8 ">
             {HeroSectionData.Image.data && (
               <Image
-                src={`${backendUrl}${HeroSectionData.Image.data.attributes.url}`}
+                src={HeroSectionData.Image.data.attributes.url}
                 width={700}
                 height={475}
                 className="object-contain rounded aspect-[4/3]"

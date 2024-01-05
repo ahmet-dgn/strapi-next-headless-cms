@@ -16,7 +16,7 @@ export default function NewProdcuts({ backendUrl, data, translation }) {
             <Card
               cardInfo={product.attributes.Writer}
               cardTitle={product.attributes.Title}
-              cardImg={`${backendUrl}${product.attributes.MainImage.data.attributes.url}`}
+              cardImg={product.attributes.MainImage.data.attributes.url}
               cardPadding="p-2 sm:p-4"
               cardBorder="border hover:shadow-xl transition-shadow duration-300 hover:border-gray-400"
               cardBgColor="bg-surface-color"

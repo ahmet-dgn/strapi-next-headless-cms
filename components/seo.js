@@ -5,10 +5,10 @@ export default function SEO({ generalSettings, seoData }) {
   const domain = generalSettings.FrontUrl;
   const companyName = generalSettings.CompanyName;
   const logo = generalSettings.Logo.data
-    ? `${dataUrl}${generalSettings.Logo.data[0].attributes.url}`
+    ? generalSettings.Logo.data[0].attributes.url
     : "";
   const favicon = generalSettings.Favicon.data
-    ? `${dataUrl}${generalSettings.Favicon.data[0].attributes.url}`
+    ? generalSettings.Favicon.data[0].attributes.url
     : "";
   const index = generalSettings.Index;
   return (

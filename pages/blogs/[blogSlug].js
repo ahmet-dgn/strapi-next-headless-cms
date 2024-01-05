@@ -26,7 +26,7 @@ export default function ProductDetail({ blog, menu, generalSettings }) {
               height={400}
               src={
                 data.attributes.Image.data
-                  ? dataUrl + data.attributes.Image.data.attributes.url
+                  ? data.attributes.Image.data.attributes.url
                   : ""
               }
               className="rounded"

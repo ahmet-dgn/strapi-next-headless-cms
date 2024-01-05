@@ -21,7 +21,7 @@ export default function Blog({
           cardPadding="px-2"
           cardBtn={translation}
           cardLink={`/blogs/${blogs[0].attributes.Slug}`}
-          cardImg={`${backendUrl}${blogs[0].attributes.Image.data.attributes.url}`}
+          cardImg={blogs[0].attributes.Image.data.attributes.url}
           cardInfo={blogs[0].attributes.Date}
           cardTitle={blogs[0].attributes.Title}
           cardDesc={blogs[0].attributes.Description}
@@ -35,7 +35,7 @@ export default function Blog({
           cardPadding="px-2"
           cardBtn={translation}
           cardLink={`/blogs/${blogs[1].attributes.Slug}`}
-          cardImg={`${backendUrl}${blogs[1].attributes.Image.data.attributes.url}`}
+          cardImg={blogs[1].attributes.Image.data.attributes.url}
           cardInfo={blogs[1].attributes.Date}
           cardTitle={blogs[1].attributes.Title}
           cardDesc={blogs[1].attributes.Description}
@@ -49,7 +49,7 @@ export default function Blog({
           cardPadding="px-2"
           cardBtn={translation}
           cardLink={`/blogs/${blogs[2].attributes.Slug}`}
-          cardImg={`${backendUrl}${blogs[2].attributes.Image.data.attributes.url}`}
+          cardImg={blogs[2].attributes.Image.data.attributes.url}
           cardInfo={blogs[2].attributes.Date}
           cardTitle={blogs[2].attributes.Title}
           cardDesc={blogs[2].attributes.Description}

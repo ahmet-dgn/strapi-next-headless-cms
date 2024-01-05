@@ -88,7 +88,7 @@ export default function blogs({ menu, blogs, generalSettings }) {
                     cardTitle={blog.attributes.Title}
                     cardImg={
                       blog.attributes.Image.data
-                        ? dataUrl + blog.attributes.Image.data.attributes.url
+                        ? blog.attributes.Image.data.attributes.url
                         : ""
                     }
                     cardPadding="p-2 xl:p-4"

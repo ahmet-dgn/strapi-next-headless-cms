@@ -2,12 +2,12 @@ import Container from "./ui/container";
 import Image from "next/image";
 import TextContent from "./ui/textContent";
 
-export default function TextWithOverlayImage({ data, backendUrl }) {
+export default function TextWithOverlayImage({ data }) {
   const TextWithOverlayImageData = data;
   return (
     <div className="relative w-full h-[40rem] ">
       <Image
-        src={`${backendUrl}${TextWithOverlayImageData.Image.data.attributes.url}`}
+        src={TextWithOverlayImageData.Image.data.attributes.url}
         fill
         sizes="100vw"
         className="object-cover brightness-[0.35] "

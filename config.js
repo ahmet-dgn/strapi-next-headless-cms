@@ -1,1 +1,1 @@
-export const dataUrl = `http://127.0.0.1:1337`;
+export const dataUrl = `https://strapi-85ez.onrender.com`;
