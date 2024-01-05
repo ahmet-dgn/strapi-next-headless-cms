@@ -101,9 +101,7 @@ export const getStaticPaths = async ({ locales }) => {
 
   for (const locale of localeAll) {
     try {
-      const res = await fetch(
-        `http://127.0.0.1:1337/api/pages?locale=${locale}`
-      );
+      const res = await fetch(`${dataUrl}/api/pages?locale=${locale}`);
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
