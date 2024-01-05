@@ -227,12 +227,12 @@ export const getStaticPaths = async ({ locales }) => {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
       const products = await res.json();
-      console.log(products.data[0].attributes);
+
       const localePaths = products.data.map((product) => ({
         params: { productSlug: product.attributes.Slug.toString() },
         locale: locale,
       }));
-
+      console.log();
       paths.push(...localePaths);
     } catch (error) {
       console.error(`Fetch failed for ${locale}:`, error);

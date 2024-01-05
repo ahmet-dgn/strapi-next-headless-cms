@@ -156,7 +156,7 @@ export default function blogs({ menu, blogs, generalSettings }) {
 
 export async function getStaticProps({ locale, defaultLocale }) {
   const res = await fetch(
-    `http://127.0.0.1:1337/api/navigation/render/main-navigation${
+    `${dataUrl}/api/navigation/render/main-navigation${
       locale === defaultLocale ? "" : "-" + locale
     }`
   );
