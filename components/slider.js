@@ -123,7 +123,6 @@ export default function Slider({ data, backendUrl }) {
       ref={touchRef}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
-      s
     >
       <div className="opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
         <div

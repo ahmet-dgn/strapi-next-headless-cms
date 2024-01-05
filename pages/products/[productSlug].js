@@ -232,8 +232,9 @@ export const getStaticPaths = async ({ locales }) => {
         params: { productSlug: product.attributes.Slug.toString() },
         locale: locale,
       }));
-      console.log();
+
       paths.push(...localePaths);
+      console.log(localePaths);
     } catch (error) {
       console.error(`Fetch failed for ${locale}:`, error);
     }
