@@ -71,7 +71,7 @@ export default function ProductDetail({ product, menu, generalSettings }) {
           <Row rowCol="grid-cols-1 md:grid-cols-2">
             <div className="space-y-2">
               <div
-                className="relative aspect-[4/3] flex overflow-hidden  select-none w-[728] h-[728] bg-white border rounded group"
+                className="relative aspect-[3/4] lg:aspect-[4/3] flex overflow-hidden  select-none  bg-white border rounded group"
                 ref={elementRef}
               >
                 <div
@@ -107,8 +107,8 @@ export default function ProductDetail({ product, menu, generalSettings }) {
                     <path d="M17.0019 2.98505C16.5119 2.49505 15.7219 2.49505 15.2319 2.98505L6.92186 11.2951C6.53186 11.6851 6.53186 12.3151 6.92186 12.7051L15.2319 21.0151C15.7219 21.5051 16.5119 21.5051 17.0019 21.0151C17.4919 20.5251 17.4919 19.7351 17.0019 19.2451L9.76186 11.9951L17.0119 4.74505C17.4919 4.26505 17.4919 3.46505 17.0019 2.98505Z" />
                   </svg>
                 </div>
-                {imagesArray.map((image) => (
-                  <div className="relative aspect-[4/3]">
+                {imagesArray.map((image, index) => (
+                  <div className="relative min-w-full" key={index}>
                     <Image
                       src={image}
                       fill
@@ -234,7 +234,6 @@ export const getStaticPaths = async ({ locales }) => {
       }));
 
       paths.push(...localePaths);
-      console.log(localePaths);
     } catch (error) {
       console.error(`Fetch failed for ${locale}:`, error);
     }
