@@ -15,5 +15,6 @@
     "product_category":  "Product Categories",
     "product_category_desc":  "Discover all our products.",
     "blog_category": "Blog Categories",
-    "blog_category_desc": "All blog content"
+    "blog_category_desc": "All blog content",
+    "show_filter": "Show Filter"
 }

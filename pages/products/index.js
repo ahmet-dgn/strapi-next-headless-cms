@@ -124,7 +124,7 @@ export default function Products({ menu, products, generalSettings }) {
                 onClick={menuStatusHandler}
               >
                 <p className="  min-h-[2rem] px-3 text-link-small flex items-center justify-center w-fit rounded text-on-background-color border-2 border-on-background-color hover:bg-on-background-color/20">
-                  Filtreyi Göster
+                  {t("show_filter")}
                 </p>
               </div>
 

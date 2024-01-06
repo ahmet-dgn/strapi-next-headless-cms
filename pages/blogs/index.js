@@ -75,7 +75,7 @@ export default function blogs({ menu, blogs, generalSettings }) {
                 onClick={menuStatusHandler}
               >
                 <p className="  min-h-[2rem] px-3 text-link-small flex items-center justify-center w-fit rounded text-on-background-color border-2 border-on-background-color hover:bg-on-background-color/20">
-                  Filtreyi Göster
+                  {t("show_filter")}
                 </p>
               </div>
 
@@ -133,10 +133,10 @@ export default function blogs({ menu, blogs, generalSettings }) {
                 >
                   {t("all_filter")}
                 </p>
-                {filteredCategories.map((category) => (
+                {filteredCategories.map((category, index) => (
                   <p
                     className="py-2 border-b border-gray-300 cursor-pointer text-on-background-color hover:text-primary-color/60"
-                    key={category}
+                    key={index}
                     onClick={() => {
                       filterblogsByLanguageAndCategory(category);
                       menuStatusHandler();

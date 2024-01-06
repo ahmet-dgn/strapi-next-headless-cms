@@ -15,5 +15,6 @@
     "product_category":  "Ürün Kategorileri",
     "product_category_desc":  "Tüm ürünlerimizi keşfedin.",
     "blog_category": "Blog Kategorileri",
-    "blog_category_desc": "Tüm blog içerikleri"
+    "blog_category_desc": "Tüm blog içerikleri",
+    "show_filter": "Filtreyi Göster"
 }
